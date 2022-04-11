@@ -1,5 +1,5 @@
 import time
-from turtle import Screen, Turtle
+from turtle import Screen
 from player_pad import PlayerPad
 from ball import Ball
 from scoreboard import Scoreboard
@@ -21,9 +21,6 @@ screen.onkeypress(l_pad.up, "w")
 screen.onkeypress(l_pad.down, "s")
 screen.onkeypress(r_pad.up, "Up")
 screen.onkeypress(r_pad.down, "Down")
-
-
-
 
 is_on = True
 while is_on:
@@ -49,13 +46,5 @@ while is_on:
         ball.bounce_pad()
     if score.game_over():
         is_on = False
-
-
-
-
-
-
-
-
 
 screen.exitonclick()
