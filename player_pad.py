@@ -12,8 +12,8 @@ class PlayerPad(Turtle):
         self.goto(-350, 0)
 
 
-    def move(self):
-        self.forward(50)
+    # def move(self):
+    #     self.forward(50)
 
     def up(self):
         y = self.ycor() + 20
