@@ -14,9 +14,15 @@ class PlayerPad(Turtle):
         self.goto(-350, 0)
 
     def up(self):
-        y = self.ycor() + 20
+        if self.ycor() == 280:
+            y = self.ycor()
+        else:
+            y = self.ycor() + 20
         self.sety(y)
 
     def down(self):
-        y = self.ycor() - 20
+        if self.ycor() == -280:
+            y = self.ycor()
+        else:
+            y = self.ycor() - 20
         self.sety(y)
